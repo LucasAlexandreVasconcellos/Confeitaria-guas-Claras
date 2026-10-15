@@ -12,7 +12,7 @@ import { Footer } from './components/Footer';
 import { OrderDrawerModal } from './components/OrderDrawerModal';
 import { PrivacyModal } from './components/PrivacyModal';
 import { products } from './data/products';
-import { Product, OrderItem, ProductCategory } from './types';
+import type { Product, OrderItem, ProductCategory } from './types';
 
 export const App: React.FC = () => {
   const [orderItems, setOrderItems] = useState<OrderItem[]>([]);
