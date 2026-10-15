@@ -1,0 +1,65 @@
+:root {
+  /* Paleta Extraída Fielmente da Referência Visual */
+  --color-rose-hero: #9e646d;
+  --color-rose-dark: #824b54;
+  --color-rose-light: #b37983;
+  --color-rose-border: rgba(158, 100, 109, 0.25);
+
+  --color-bg-cream: #faf4ef;
+  --color-bg-cream-alt: #f4eae0;
+  --color-bg-white: #ffffff;
+  --color-bg-white-warm: #fdfbf8;
+
+  /* Cartões em Tons Pastel Específicos da Referência */
+  --color-card-pink: #fcebec;
+  --color-card-peach: #f5eae0;
+  --color-card-lavender: #ede4f0;
+
+  /* Tipografia e Cores de Texto */
+  --color-chocolate: #382025;
+  --color-chocolate-dark: #221215;
+  --color-chocolate-muted: #6b4f55;
+  --color-chocolate-light: #8e7379;
+  
+  --color-text-on-rose: #ffffff;
+  --color-text-on-rose-muted: #f7e8eb;
+
+  /* Botões e Elementos Interativos */
+  --color-btn-dark: #4b2c32;
+  --color-btn-dark-hover: #351c21;
+  --color-btn-rose: #9e646d;
+  --color-btn-rose-hover: #824b54;
+  --color-arrow-circle: #ffffff;
+
+  /* Bordas e Divisores */
+  --color-border-subtle: rgba(56, 32, 37, 0.08);
+  --color-border-medium: rgba(56, 32, 37, 0.15);
+
+  /* Fontes */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-script: 'Alex Brush', cursive;
+
+  /* Sombras Delicadas */
+  --shadow-sm: 0 2px 6px rgba(56, 32, 37, 0.04);
+  --shadow-md: 0 8px 20px rgba(56, 32, 37, 0.06);
+  --shadow-lg: 0 16px 32px rgba(56, 32, 37, 0.09);
+  --shadow-hover: 0 20px 40px rgba(56, 32, 37, 0.13);
+  --shadow-hero-plate: 0 24px 48px rgba(56, 32, 37, 0.16);
+
+  /* Raios de Borda */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-pill: 9999px;
+
+  /* Transições Suaves */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-bounce: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Espaçamentos e Layout */
+  --container-max-width: 1200px;
+  --container-padding: 24px;
+}

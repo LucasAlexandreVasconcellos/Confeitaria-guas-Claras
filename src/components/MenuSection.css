@@ -1,0 +1,300 @@
+.menu-section {
+  padding: 80px 0;
+  background-color: var(--color-bg-cream-alt);
+}
+
+.menu-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 40px;
+}
+
+.menu-subtitle {
+  font-size: 1.05rem;
+  color: var(--color-chocolate-muted);
+  margin-top: 12px;
+}
+
+/* Abas de Categorias */
+.category-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.tab-btn {
+  padding: 10px 22px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--color-chocolate);
+  background-color: var(--color-bg-white);
+  border: 1.5px solid rgba(56, 32, 37, 0.08);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+}
+
+.tab-btn:hover {
+  border-color: var(--color-rose-hero);
+  color: var(--color-rose-hero);
+  transform: translateY(-2px);
+}
+
+.tab-btn.active {
+  background-color: var(--color-rose-hero);
+  color: #ffffff;
+  border-color: var(--color-rose-hero);
+  box-shadow: 0 4px 14px rgba(158, 100, 109, 0.3);
+}
+
+/* Grade de Produtos */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.product-card {
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(56, 32, 37, 0.06);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition-normal);
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+  border-color: rgba(158, 100, 109, 0.2);
+}
+
+.product-image-container {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background-color: var(--color-card-peach);
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.06);
+}
+
+.specialty-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background-color: var(--color-btn-dark);
+  color: #ffffff;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.provisional-tag {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(56, 32, 37, 0.75);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Conteúdo do Card */
+.product-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.product-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.product-category-name {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-rose-hero);
+}
+
+.product-servings {
+  font-size: 0.76rem;
+  color: var(--color-chocolate-muted);
+}
+
+.product-title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--color-chocolate);
+  margin-bottom: 10px;
+  line-height: 1.25;
+}
+
+.product-desc {
+  font-size: 0.9rem;
+  color: var(--color-chocolate-muted);
+  line-height: 1.55;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+.product-highlights {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.highlight-pill {
+  font-size: 0.72rem;
+  font-weight: 600;
+  background-color: rgba(158, 100, 109, 0.08);
+  color: var(--color-chocolate);
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+}
+
+/* Rodapé do Card */
+.product-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(56, 32, 37, 0.06);
+}
+
+.add-order-btn {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--color-btn-dark);
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: var(--radius-pill);
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: var(--transition-normal);
+}
+
+.add-order-btn:hover {
+  background-color: var(--color-btn-dark-hover);
+  transform: translateY(-1px);
+}
+
+.add-order-btn.in-order {
+  background-color: var(--color-rose-hero);
+}
+
+.quick-whatsapp-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(56, 32, 37, 0.05);
+  color: var(--color-chocolate);
+  transition: var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.quick-whatsapp-btn:hover {
+  background-color: #25d366;
+  color: #ffffff;
+}
+
+/* Banner de Entrega iFood */
+.menu-delivery-banner {
+  margin-top: 56px;
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-lg);
+  padding: 32px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-shadow: var(--shadow-md);
+  border: 1.5px solid rgba(158, 100, 109, 0.15);
+}
+
+.delivery-banner-text h4 {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  color: var(--color-chocolate);
+  margin-bottom: 6px;
+}
+
+.delivery-banner-text p {
+  font-size: 0.95rem;
+  color: var(--color-chocolate-muted);
+}
+
+.ifood-banner-btn {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.menu-empty {
+  text-align: center;
+  padding: 64px 0;
+}
+
+.menu-empty p {
+  font-size: 1.15rem;
+  margin-bottom: 16px;
+}
+
+/* Responsividade do Menu */
+@media (max-width: 1100px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .menu-delivery-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 28px 20px;
+  }
+}

@@ -1,0 +1,229 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: var(--color-bg-cream);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(56, 32, 37, 0.05);
+  transition: var(--transition-normal);
+}
+
+.site-header.scrolled {
+  background-color: rgba(250, 244, 239, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(56, 32, 37, 0.06);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+/* Identidade Visual / Logotipo */
+.brand-logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.brand-script {
+  font-family: var(--font-script);
+  font-size: 2.3rem;
+  color: var(--color-chocolate);
+  letter-spacing: 0.02em;
+}
+
+.brand-sub {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  color: var(--color-rose-hero);
+  margin-top: -4px;
+}
+
+/* Navegação Desktop */
+.desktop-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-link {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-chocolate);
+  position: relative;
+  padding: 6px 0;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-rose-hero);
+  transition: var(--transition-normal);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: var(--color-rose-hero);
+}
+
+/* Ações e Ícones */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.action-icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-chocolate);
+  background-color: transparent;
+  transition: var(--transition-fast);
+  position: relative;
+}
+
+.action-icon-btn:hover {
+  background-color: rgba(56, 32, 37, 0.06);
+  color: var(--color-rose-hero);
+}
+
+.bag-btn {
+  background-color: rgba(158, 100, 109, 0.1);
+  color: var(--color-chocolate);
+}
+
+.bag-badge {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background-color: var(--color-rose-hero);
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+.header-cta {
+  font-size: 0.88rem;
+  padding: 10px 22px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-input {
+  width: 180px;
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--color-border-medium);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  background-color: var(--color-bg-white);
+  color: var(--color-chocolate);
+  outline: none;
+  animation: fadeIn 0.2s ease-in;
+}
+
+.search-input:focus {
+  border-color: var(--color-rose-hero);
+}
+
+.mobile-toggle-btn {
+  display: none;
+  color: var(--color-chocolate);
+  padding: 6px;
+}
+
+/* Mobile Drawer */
+.mobile-drawer {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-bg-cream);
+  border-bottom: 2px solid var(--color-border-subtle);
+  padding: 24px;
+  box-shadow: 0 12px 24px rgba(56, 32, 37, 0.08);
+}
+
+.mobile-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mobile-nav-link {
+  font-size: 1.15rem;
+  font-family: var(--font-serif);
+  color: var(--color-chocolate);
+  display: block;
+  padding: 8px 0;
+  border-bottom: 1px dashed rgba(56, 32, 37, 0.08);
+}
+
+.mobile-drawer-footer {
+  margin-top: 24px;
+}
+
+.mobile-cta-btn {
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scaleX(0.9); }
+  to { opacity: 1; transform: scaleX(1); }
+}
+
+/* Responsividade do Cabeçalho */
+@media (max-width: 992px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .header-cta {
+    display: none;
+  }
+
+  .mobile-toggle-btn {
+    display: flex;
+  }
+
+  .search-input {
+    width: 130px;
+  }
+}

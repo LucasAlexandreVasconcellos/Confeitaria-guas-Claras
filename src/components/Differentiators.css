@@ -1,0 +1,69 @@
+.differentiators-section {
+  padding: 44px 0 24px;
+  background-color: var(--color-bg-cream);
+}
+
+.diff-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.diff-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 320px;
+}
+
+.diff-icon-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: rgba(158, 100, 109, 0.12);
+  color: var(--color-rose-hero);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: var(--transition-normal);
+}
+
+.diff-card:hover .diff-icon-circle {
+  background-color: var(--color-rose-hero);
+  color: #ffffff;
+  transform: scale(1.08);
+}
+
+.diff-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.diff-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-chocolate);
+  margin-bottom: 4px;
+}
+
+.diff-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  color: var(--color-chocolate-muted);
+  line-height: 1.45;
+}
+
+@media (max-width: 768px) {
+  .diff-wrapper {
+    gap: 28px;
+    justify-content: flex-start;
+  }
+
+  .diff-card {
+    max-width: 100%;
+  }
+}

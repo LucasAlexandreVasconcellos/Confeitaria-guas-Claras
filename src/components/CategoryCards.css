@@ -1,0 +1,133 @@
+.category-section {
+  padding: 56px 0 64px;
+  background-color: var(--color-bg-cream);
+}
+
+.category-header {
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--color-rose-hero);
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-size: 2.35rem;
+  color: var(--color-chocolate);
+  font-weight: 600;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.category-card {
+  border-radius: var(--radius-xl);
+  padding: 36px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 460px;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+}
+
+.card-top {
+  text-align: center;
+}
+
+.card-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-rose-hero);
+  background: rgba(255, 255, 255, 0.65);
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 12px;
+}
+
+.card-title {
+  font-family: var(--font-serif);
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--color-chocolate);
+  line-height: 1.2;
+}
+
+.card-image-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.card-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 12px 24px rgba(56, 32, 37, 0.12);
+  transition: transform 0.4s ease-out;
+  border: 4px solid rgba(255, 255, 255, 0.7);
+}
+
+.category-card:hover .card-img {
+  transform: scale(1.06);
+}
+
+.card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 16px;
+  border-top: 1px dashed rgba(56, 32, 37, 0.12);
+}
+
+.card-subtitle {
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  color: var(--color-chocolate-muted);
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+@media (max-width: 992px) {
+  .category-grid {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+    margin: 0 auto;
+    gap: 24px;
+  }
+
+  .category-card {
+    min-height: auto;
+    padding: 32px 24px 24px;
+  }
+
+  .section-title {
+    font-size: 1.95rem;
+  }
+}

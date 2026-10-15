@@ -1,0 +1,178 @@
+.site-footer {
+  background-color: var(--color-rose-hero);
+  color: var(--color-text-on-rose);
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-content {
+  padding-top: 56px;
+  padding-bottom: 36px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.3fr;
+  gap: 48px;
+  margin-bottom: 48px;
+}
+
+/* Coluna da Marca */
+.brand-col {
+  max-width: 320px;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.footer-script {
+  font-family: var(--font-script);
+  font-size: 2.8rem;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.footer-sub {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  color: var(--color-text-on-rose-muted);
+  margin-top: -4px;
+}
+
+.footer-tagline {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--color-text-on-rose-muted);
+  margin-bottom: 24px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icon-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-normal);
+}
+
+.social-icon-link:hover {
+  background-color: #ffffff;
+  color: var(--color-rose-hero);
+  transform: translateY(-3px);
+}
+
+/* Colunas de Links */
+.footer-heading {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a,
+.footer-text-btn {
+  font-size: 0.92rem;
+  color: var(--color-text-on-rose-muted);
+  transition: var(--transition-fast);
+  text-align: left;
+}
+
+.footer-links a:hover,
+.footer-text-btn:hover {
+  color: #ffffff;
+  padding-left: 4px;
+}
+
+.footer-address {
+  font-style: normal;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--color-text-on-rose-muted);
+}
+
+.footer-hours-label {
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 12px;
+}
+
+/* Barra Inferior */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 0.85rem;
+  color: var(--color-text-on-rose-muted);
+}
+
+.footer-privacy-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer-privacy-btn {
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.footer-privacy-btn:hover {
+  color: var(--color-text-on-rose-muted);
+}
+
+.footer-dev {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.heart-icon {
+  color: #ffccd5;
+}
+
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+}

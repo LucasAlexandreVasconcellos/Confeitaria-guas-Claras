@@ -1,0 +1,121 @@
+.privacy-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(34, 18, 21, 0.65);
+  backdrop-filter: blur(4px);
+  z-index: 2100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.privacy-modal-content {
+  width: 100%;
+  max-width: 620px;
+  max-height: 85vh;
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 16px 48px rgba(56, 32, 37, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(56, 32, 37, 0.08);
+}
+
+.privacy-modal-header {
+  padding: 24px 28px;
+  border-bottom: 1px solid rgba(56, 32, 37, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-bg-cream);
+}
+
+.privacy-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.privacy-shield-icon {
+  color: var(--color-rose-hero);
+}
+
+.privacy-modal-header h2 {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  color: var(--color-chocolate);
+}
+
+.privacy-modal-body {
+  padding: 28px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.privacy-highlight-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background-color: rgba(158, 100, 109, 0.08);
+  border-left: 4px solid var(--color-rose-hero);
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--color-chocolate);
+}
+
+.lock-icon {
+  color: var(--color-rose-hero);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.privacy-section-item h3 {
+  font-family: var(--font-serif);
+  font-size: 1.12rem;
+  color: var(--color-chocolate);
+  margin-bottom: 6px;
+}
+
+.privacy-section-item p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-chocolate-muted);
+}
+
+.privacy-list {
+  list-style: none;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.privacy-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--color-chocolate);
+  line-height: 1.45;
+}
+
+.privacy-list li svg {
+  color: #25d366;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.privacy-modal-footer {
+  padding: 20px 28px;
+  border-top: 1px solid rgba(56, 32, 37, 0.08);
+  background-color: var(--color-bg-cream);
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,0 +1,124 @@
+.highlight-section {
+  padding: 64px 0 80px;
+  background-color: var(--color-bg-cream);
+  position: relative;
+}
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  align-items: center;
+  gap: 64px;
+}
+
+/* Coluna da Imagem */
+.highlight-image-col {
+  display: flex;
+  justify-content: center;
+}
+
+.highlight-img-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+}
+
+.highlight-dish-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  border: 6px solid var(--color-bg-white);
+  transition: transform 0.4s ease-out;
+}
+
+.highlight-img-wrapper:hover .highlight-dish-img {
+  transform: scale(1.02);
+}
+
+.highlight-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  color: var(--color-chocolate);
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(56, 32, 37, 0.1);
+}
+
+/* Coluna de Texto */
+.highlight-text-col {
+  max-width: 540px;
+}
+
+.highlight-title {
+  font-size: 2.65rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-chocolate);
+  margin-bottom: 16px;
+}
+
+.highlight-squiggle {
+  margin-bottom: 20px;
+}
+
+.highlight-description {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--color-chocolate);
+  margin-bottom: 16px;
+}
+
+.highlight-subtext {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-chocolate-muted);
+  margin-bottom: 32px;
+}
+
+.highlight-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+@media (max-width: 992px) {
+  .highlight-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .highlight-image-col {
+    order: 2;
+  }
+
+  .highlight-text-col {
+    order: 1;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .highlight-squiggle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .highlight-actions {
+    justify-content: center;
+  }
+
+  .highlight-title {
+    font-size: 2.15rem;
+  }
+}
